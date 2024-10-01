@@ -12,7 +12,7 @@ from pages.store_page import StorePage
 def driver():
     chrome_options = Options()
     chrome_service = Service(
-        r'C:\Users\adm\.cache\selenium\chromedriver\win64\128.0.6613.119\chromedriver.exe')
+        r'C:\Users\Pobuta\.cache\selenium\chromedriver\win64\128.0.6613.119\chromedriver.exe')
     driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
     yield driver
     driver.quit()
@@ -42,8 +42,8 @@ def test_order_submission(driver):
     last_name_input = driver.find_element(By.ID, "last-name")
     postal_code_input = driver.find_element(By.ID, "postal-code")
 
-    first_name_input.send_keys("Денис")
-    last_name_input.send_keys("Ломакин")
+    first_name_input.send_keys("Никита")
+    last_name_input.send_keys("Побута")
     postal_code_input.send_keys("117546")
 
     driver.find_element(By.ID, "continue").click()

@@ -9,7 +9,7 @@ from pages.calc_page import SlowCalculatorPage
 def driver():
     chrome_options = Options()
     chrome_service = Service(
-        r'C:\Users\adm\.cache\selenium\chromedriver\win64\128.0.6613.119\chromedriver.exe')
+        r'C:\Users\Pobuta\.cache\selenium\chromedriver\win64\128.0.6613.119\chromedriver.exe')
     driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
     yield driver
     driver.quit()
